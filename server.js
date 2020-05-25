@@ -1,7 +1,7 @@
 require('dotenv').config()
 
 var express = require('express'),
-  app = express().use('*'),
+  app = express(),
   port = process.env.PORT || 3001,
   mongoose = require('mongoose'),
   Task = require('./api/models/commonModel'), //created model loading here
